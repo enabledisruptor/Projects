@@ -13,7 +13,7 @@ Create accounts for two nodes for the network with a separate datadir for each u
     - choose no
     - export configuration
  
- <img src="./Capture.png" />
+ ![Alt text](Capture.PNG)
 
 3. Initializing nodes by entering following commands
     - ./geth --datadir node1 init homework.json
@@ -23,9 +23,9 @@ Create accounts for two nodes for the network with a separate datadir for each u
     - ./geth --datadir node2 --unlock"SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.01:30303" --ipcdisable --allow-insecure-unlock
 5. Add blockchain to MyCrypto and initiate test transaction. This is done by 'add custom node' via change network, input the information setup during the genesis creation
 - enter "http://127.0.0.1:8545" for URL as to identify local host
-<img src="./Capture2.png" />
-<img src="./Capture3.png" />
+![Alt text](Capture2.PNG)
+![Alt text](Capture3.PNG)
 6. Finally, go to keystore file and navigate to the node1 directory to unlock and access wallet. Respectively go to the second node address to test whether the blockchain network is fully functional. 
-<img src="./Capture4.png" />
-<img src="./Capture5.png" />
+![Alt text](Capture4.PNG)
+![Alt text](Capture5.PNG)
 

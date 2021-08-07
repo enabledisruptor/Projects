@@ -1,13 +1,16 @@
 # Import dependencies
 import subprocess
 import json
+from constants import BTC, ETH, BTCTEST
 from dotenv import load_dotenv
+from web3 import Web3, middleware
 import os
 from pprint import pprint 
 
+
 # Load and set environment variables
 load_dotenv()
-mnemonic=os.getenv("MNEMONIC")
+mnemonic=os.getenv('MNEMONIC')
 
 # Import constants.py and necessary functions from bit and web3
 from constants import *
